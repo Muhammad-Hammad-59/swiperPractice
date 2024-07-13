@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper.js Basic Setup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+         
+        <div class="swiper-wrapper" >
+            <!-- Slides -->
+            <div class="swiper-slide slide1">Slide 1</div>
+            <div class="swiper-slide slide2">Slide 2</div>
+            <div class="swiper-slide slide3">Slide 3</div>
+             <h1>Thats what i want</h1>
+             
+            <!-- ... -->
+        </div>
+        <!-- If you want pagination (bullets) -->
+        <div class="swiper-pagination"></div>
+        <!-- If you want navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- If you want a scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                effect: 'coverflow',
+                // autoplay: {
+                //     delay: 3000,
+                //  },
+                loop: true,
+                speed: 1000,
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    // },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+    },
+            });
+        });
+
+
+        const message = function() {  
+    console.log("This message is shown after 3 seconds");
+}
+ 
+setTimeout(message, 9000);
+    </script>
+</body>
+</html>
+
+
+ 

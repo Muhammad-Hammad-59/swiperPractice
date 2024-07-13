@@ -1,0 +1,29 @@
+.slide1{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.slide2{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+}
+.slide3{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+.swiper-container{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+  
+}
+
+/* .itemss{
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
